@@ -88,3 +88,10 @@ ALTER TABLE `vendas`
 COMMIT;
 
 
+Índices para tabela `telefone`
+
+
+
+CREATE TABLE `TELEFONE` ( `ID_FONE` int(6) AUTO_INCREMENT PRIMARY KEY, `ID_Cliente` int(5) NOT NULL, `TELEFONE` CHAR (20) NOT NULL, FOREIGN KEY (ID_Cliente) REFERENCES clientes(ID_Cliente));
+
+
